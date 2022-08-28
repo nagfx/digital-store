@@ -1,0 +1,316 @@
+/* Adding the external library Poppins family and loading the fonts from Google */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+
+body, html{
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(22, 21, 21);
+}
+
+.navbar-nav li {
+  padding-right: 20px; 
+}
+
+.navbar{
+  padding: .9rem;
+}
+.nav-link{
+  font-size: 1.2em !important;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+.carousel-caption{
+  position: absolute;
+  top: 55%;
+  transform: translateY(-45%);
+}
+.carousel-caption h1 {
+  font-size: 500%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 20px #000;
+}
+.carousel-caption h3 {
+  font-size: 200%;
+  font-weight: 500;
+  text-shadow: 1px 1px 1px 10px #000;
+  padding-bottom: 1rem;
+
+}
+.btn-primary {
+  background-color: #6648b1;
+  border: 1px solid #6648b1; 
+}
+
+.btn-primary:hover {
+  background-color: #7c6999;
+  border: 1px solid #7c6999; 
+}
+contactForm {
+  background: rgb(73, 73, 73);
+  padding-top: 20em;
+}
+
+
+.jumbotron {
+  padding: 1rem;
+  border-radius:0;
+}
+
+.padding {
+  padding-bottom: 2.2rem;
+}
+
+.welcome {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2.2rem;
+
+}
+
+.welcome hr {
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
+}
+
+.about {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2.2rem;
+
+}
+
+.about hr {
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
+}
+
+.fa-code {
+  color:rgb(255, 102, 0)
+}
+
+.fa-bold {
+  color: #6648b1
+}
+.fa-css3 {
+  color:#2163af;
+}
+.fa-php {
+  color:#7c6999
+}
+
+.fa-code, .fa-bold,.fa-css3, .fa-php{
+  font-size: 3.5em;
+  margin:1rem;
+
+}
+
+.cryptoCollapse {
+  width: 100%;
+  margin-bottom: 2rem;
+
+}
+.cryptoGif {
+  max-width: 100%;
+
+}
+
+.social a {
+  font-size: 4.6em;
+  padding: 3.5rem;
+
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+.fa-twitter {
+  color: #00aced;
+
+}
+.fa-instagram {
+  color: rgb(219, 0, 183);
+}
+
+.fa-snapchat {
+  color:yellow;
+}
+.fa-youtube {
+  color:red;
+}
+
+
+.fa-facebook:hover,.fa-instagram:hover, .fa-twitter:hover,
+.fa-snapchat:hover,.fa-instagram:hover {
+  color:rgb(175, 175, 175)
+
+}
+
+footer {
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 2.2rem;
+}
+
+hr.light {
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin-top: .7rem;
+  margin-bottom: 1rem;
+}
+
+footer a {
+  color: #d5d5d5;
+}
+hr.light-100 {
+  border-top: 1px solid #d5d5d5;
+  width: 100%;
+  margin-top: .7rem;
+  margin-bottom: 1rem;
+}
+
+
+
+/*---Media Queries -- Assigning the size widths for media queries*/
+@media (max-width: 992px) {
+.social a {
+  font-size: 3.8em;
+  padding:2rem;
+}
+  }
+@media (max-width: 768px) {
+  .carousel-caption{
+    top: 50%;
+  }
+  .carousel-caption h1 {
+    font-size:375%;
+  }
+  .carousel-caption h3 {
+    font-size: 140%;
+    font-weight: 400;
+    padding-bottom: .3rem;
+  
+  }
+  .carousel-caption .btn {
+    font-size: 95%;
+    padding-bottom: 8px 14px;
+  }
+  .social a {
+    font-size: 2.3em;
+    padding:1rem;
+  }
+
+  .display-4 {
+    font-size: 200%;
+  }
+
+
+
+}
+@media (max-width: 576px) {
+  .carousel-caption{
+    top: 38%;
+  }
+  .carousel-caption h1 {
+    font-size:235%;
+  }
+  .carousel-caption h3 {
+    font-size: 115%;
+  
+  }
+  .carousel-caption .btn {
+    font-size: 80%;
+    padding-bottom: 4px 8px;
+  }
+  .carousel-indicators {
+    display: none;
+  }
+  .display-4{
+    font-size: 160%;
+  }
+  .social a {
+    font-size: 2em;
+    padding: .7rem;
+  }
+}
+
+
+
+/*---Firefox Bug Fix a bootstrap fix for the FireFox Bug couresel item --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Set And Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/bigBg.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+
+
